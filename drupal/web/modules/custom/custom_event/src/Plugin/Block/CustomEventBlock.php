@@ -29,7 +29,7 @@ class CustomEventBlock extends BlockBase implements ContainerFactoryPluginInterf
    *
    * @var EntityTypeManager
    */
-  protected $entityTypeManager;
+  protected EntityTypeManager $entityTypeManager;
 
   /**
    * The current route match.
