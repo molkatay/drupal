@@ -1,0 +1,8 @@
+name: 'Custom Event Block'
+type: module
+description: 'Provides a custom block to display related events.'
+core_version_requirement: ^9 | ^10
+package: Custom
+version: '1.0.0'
+dependencies:
+  - block_content
