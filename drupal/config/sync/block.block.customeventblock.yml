@@ -1,0 +1,28 @@
+uuid: ecf06886-5ac9-43e1-ac59-fb9f06306320
+langcode: fr
+status: true
+dependencies:
+  module:
+    - custom_event
+    - node
+  theme:
+    - test_drupal
+id: customeventblock
+theme: test_drupal
+region: content
+weight: 0
+provider: null
+plugin: custom_event_block
+settings:
+  id: custom_event_block
+  label: 'Related Events'
+  label_display: visible
+  provider: custom_event
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      event: event
